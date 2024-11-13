@@ -4,10 +4,10 @@ class Account:
         self.balance = balance
     
     def debit(self,amnt):
-        self.balance += amnt
+        self.balance -= amnt
     
     def credit(self,amnt):
-        self.balance -= amnt
+        self.balance += amnt
     
     def print(self):
         print("Balance of account no: ",self.accnt_no," is: ",self.balance)
